@@ -1,0 +1,53 @@
+.app-form-group {
+    margin-bottom: 15px;
+  }
+  
+  .app-form-group.message {
+    margin-top: 40px;
+  }
+  
+  .app-form-group.buttons {
+    margin-bottom: 0;
+    text-align: right;
+  }
+  
+  .app-form-control {
+    width: 100%;
+    padding: 10px 0;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #666;
+    color: #666;
+    font-size: $fs-s;
+    text-transform: uppercase;
+    outline: none;
+    transition: border-color .2s;
+  }
+  
+  .app-form-control::placeholder {
+    color: #666;
+  }
+
+  .banner-text{
+
+    submit{
+        background: none;
+        border: none;
+        cursor: pointer;
+        outline: none;
+        font-size: $fs-s;
+        font-weight: $fw-700;
+        color: white;
+
+        @include respond(small) {
+            font-size: $fs-xs;
+        }
+
+        &:hover {
+            color: black;
+            transition: color 0.3s ease-in-out;
+        }
+    }
+
+  }
+  

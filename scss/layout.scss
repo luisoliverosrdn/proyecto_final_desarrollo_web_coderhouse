@@ -1,0 +1,149 @@
+// Navbar //
+
+.navbar {
+    background-color: $clr-bg-main !important;
+    font-size: $fs-s;
+    font-weight: $fw-300;
+    padding: 0 2rem;
+    width: 100%;
+}
+
+.nav-link {
+    @include respond(small) {
+        font-size: $fs-xs;
+    }
+}
+
+.navbar-brand {
+    i {
+        @include respond(small) {
+            font-size: $fs-lg;
+        }
+    }
+    &:hover {
+        color: $clr-accent;
+        transition: 0.3s ease-in;
+    }
+}
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: $clr-accent;
+
+    &:after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #f54d30;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+    }
+
+    &:hover:after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+}
+
+.logo-text {
+    display: inline-block;
+    font-size: $fs-m;
+    font-weight: $fw-400;
+    padding: 1.2rem;
+    margin: 0;
+
+    @include respond(small) {
+        font-size: $fs-s;
+    }
+}
+
+.navbar-collapse {
+    justify-content: end;
+}
+
+.active {
+    color: $clr-accent !important;
+}
+
+// 2 columns responsive container //
+
+@mixin container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+
+    @include respond(small) {
+        flex-direction: column;
+        padding: 0;
+    }
+}
+
+// footer //
+
+footer {
+    background-color: #e8e8e8;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    height: auto;
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer-row1 {
+    padding: 1rem 2rem 0;
+
+    @include respond(small) {
+        padding: 0;
+    }
+}
+
+.footer-row2 {
+    padding: 0 2rem;
+}
+
+.footer-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 0;
+
+    @include respond(small) {
+        flex-direction: column;
+    }
+
+    li {
+        padding: 0 2rem;
+        font-size: $fs-s;
+        font-weight: $fw-300;
+
+        @include respond(small) {
+            font-size: $fs-xs;
+            padding: 0.5rem 0;
+        }
+    }
+
+    a:hover {
+        color: #f54121;
+        transition: 0.3s ease-in;
+    }
+}
+
+.fa-brands:hover {
+    color: #f54121;
+    transition: 0.3s ease-in;
+}

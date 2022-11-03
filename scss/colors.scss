@@ -1,0 +1,18 @@
+// general colors //
+$clr-bg-main: #e8e8e8;
+$clr-bg-dark: #dcdcdc;
+$clr-accent: #f54121;
+$clr-accent-light: #fc5436;
+
+// font colors //
+$clr-font-dark: #000000;
+$clr-font-light: #707071;
+
+// Color classes //
+.clr-bg-main{
+    background-color: $clr-bg-main;
+}
+
+.clr-bg-dark{
+    background-color: $clr-bg-dark;
+}

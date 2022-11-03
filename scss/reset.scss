@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  fieldset,
+  img {
+    border: 0;
+  }
+  
+  ol,
+  ul {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  // general styling //
+  html {
+    font-family: $main-font;
+    color: $clr-font-dark;
+  }
+

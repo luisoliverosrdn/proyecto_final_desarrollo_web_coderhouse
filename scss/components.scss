@@ -1,0 +1,54 @@
+// button //
+
+.button {
+    margin: 1.3rem auto;
+    width: 100%;
+    padding: 1rem;
+    background-color: $clr-accent;
+    border: none;
+    text-transform: uppercase;
+    text-align: center;
+
+    &:hover {
+        box-shadow: -10px -10px rgba(0, 0, 0, 0.8);
+        background-color: $clr-accent-light;
+        transition: all 0.4s ease-in-out;
+        color: black;
+    }
+
+    a {
+        font-size: $fs-s;
+        font-weight: $fw-700;
+        color: white;
+
+        @include respond(small) {
+            font-size: $fs-xs;
+        }
+
+        &:hover {
+            color: black;
+            transition: color 0.3s ease-in-out;
+        }
+    }
+}
+
+// Grid //
+
+@mixin grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 0.5rem;
+    margin: 0 auto;
+    padding-inline: 1rem;
+
+    @media screen and (min-width: 750px) {
+        grid-template-columns: repeat(2, 1fr);
+        padding-inline: 2rem;
+    }
+
+    @media screen and (min-width: 970px) {
+        grid-template-columns: repeat(3, 1fr);
+        padding-inline: 2rem;
+        max-width: 70rem;
+    }
+}
