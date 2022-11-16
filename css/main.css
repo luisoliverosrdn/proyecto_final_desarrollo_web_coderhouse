@@ -281,13 +281,13 @@ main {
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
-  padding: 2rem; }
+  padding: 2rem;
+  margin: 0 auto; }
   @media (max-width: 576px) {
     .container-2-col {
       flex-direction: column;
       padding: 0; } }
 
-<<<<<<< HEAD
 .margin-top {
   margin-top: 45.17px; }
 
@@ -297,8 +297,6 @@ main {
 .clr-bg-dark {
   background-color: #dcdcdc; }
 
-=======
->>>>>>> dev
 .banner-text {
   padding: 1rem;
   width: 100%;

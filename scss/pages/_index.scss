@@ -10,7 +10,6 @@ main {
 .container-2-col {
     @include container;
     padding: 2rem;
-<<<<<<< HEAD:scss/pages/index.scss
     margin: 0 auto;
 }
 
@@ -24,8 +23,6 @@ main {
 
 .clr-bg-dark {
     background-color: $clr-bg-dark;
-=======
->>>>>>> dev:scss/pages/_index.scss
 }
 
 .banner-text {
