@@ -29,6 +29,9 @@
       color: black;
       transition: color 0.3s ease-in-out; }
 
+.margin-top {
+  margin-top: 53px; }
+
 .navbar {
   background-color: #e8e8e8 !important;
   font-size: 1rem;
@@ -151,15 +154,9 @@ html {
   font-family: "Lato", sans-serif;
   color: #000000; }
 
-.margin-top {
-  margin-top: 69.38px; }
-
 .banner-text a {
   font-weight: 700;
   text-decoration: none; }
-  .banner-text a:hover {
-    color: #f54121;
-    transition: 0.3s ease-in; }
 
 .app-form-group {
   margin-bottom: 15px; }
@@ -197,14 +194,11 @@ html {
   @media (max-width: 576px) {
     .banner-text submit {
       font-size: 0.875rem; } }
-  .banner-text submit:hover {
-    color: black;
-    transition: color 0.3s ease-in-out; }
 
 .gallery-container {
   display: flex;
   flex-direction: column;
-  margin-top: 69.38px;
+  margin-top: 53px;
   background: #e8e8e8;
   width: 100%; }
 
@@ -287,13 +281,13 @@ main {
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
-  padding: 2rem;
-  margin: 0 auto; }
+  padding: 2rem; }
   @media (max-width: 576px) {
     .container-2-col {
       flex-direction: column;
       padding: 0; } }
 
+<<<<<<< HEAD
 .margin-top {
   margin-top: 45.17px; }
 
@@ -303,6 +297,8 @@ main {
 .clr-bg-dark {
   background-color: #dcdcdc; }
 
+=======
+>>>>>>> dev
 .banner-text {
   padding: 1rem;
   width: 100%;
